@@ -1,0 +1,6 @@
+@use '../utils';
+
+$primary-font-family: var(--font-sans), system-ui, sans-serif;
+$secondary-font-family: var(--font-alt), system-ui, sans-serif;
+
+$font-size: utils.rem(14);

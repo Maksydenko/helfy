@@ -1,0 +1,17 @@
+$min-width: 320;
+$max-width: 1920;
+$max-width-container: 1024;
+$container-padding: 35;
+
+$container-width: $max-width-container + $container-padding;
+
+$xxxl: 1919.98px;
+$xxl: 1535.98px;
+$xl: 1279.98px;
+$lg: 1023.98px;
+$md: 767.98px;
+$sm: 639.98px;
+$xsm: 389.98px;
+
+// 1 = responsiveness; !1 = breakpoint-based container
+$adaptive-type: 1;

@@ -1,0 +1,34 @@
+@use 'module' as *;
+
+.headerMain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: rem($header-main-height);
+  background: $white;
+  border-radius: rem(20) rem(20) 0 0;
+
+  @media (max-width: $md) {
+    height: rem($header-main-height-md);
+    background: hsl(200 16% 96%);
+    border-bottom: rem(1) solid hsl(210 11% 96%);
+  }
+
+  // .headerMain__logo
+  &__logo {
+    display: block;
+    width: rem(215);
+    height: rem(35);
+
+    @media (max-width: $md) {
+      width: rem(175);
+      height: rem(28);
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

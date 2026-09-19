@@ -1,0 +1,57 @@
+@use './module' as *;
+
+// Scrollbar styles
+
+:root {
+  --scroll-color: hsl(220 9% 46% / 0.45);
+  --scroll-bg: hsl(220 14% 96%);
+}
+
+::-webkit-scrollbar {
+  width: rem(8);
+  height: rem(4);
+  background: var(--scroll-bg);
+
+  // ::-webkit-scrollbar-thumbs
+
+  &-thumb {
+    background: var(--scroll-color);
+    border-radius: rem(4);
+  }
+}
+
+// Body tag styles
+body {
+  // Lock scroll
+  .lock {
+    overflow: hidden;
+    overscroll-behavior: none;
+    touch-action: none;
+  }
+}
+
+.appShell {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: clip;
+  color: $black;
+  background: $white;
+
+  // .appShell__body
+  &__body {
+    flex: 1 1 auto;
+
+    @media (min-width: $lg) {
+      display: flex;
+    }
+  }
+
+  // .appShell__main
+  &__main {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    min-width: 0;
+  }
+}

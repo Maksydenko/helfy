@@ -1,0 +1,9 @@
+@use 'module' as *;
+
+.home {
+  padding-top: rem($header-height);
+
+  @media (max-width: $md) {
+    padding-top: rem($header-height-md);
+  }
+}

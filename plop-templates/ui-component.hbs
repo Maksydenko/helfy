@@ -1,0 +1,12 @@
+import s from './{{pascalCase name}}.module.scss'
+
+export const {{pascalCase name}} = (): HTMLElement => {
+  const root = document.createElement('div')
+
+  root.className = s.{{camelCase name}}
+  root.innerHTML = `
+    <div></div>
+  `
+
+  return root
+}
